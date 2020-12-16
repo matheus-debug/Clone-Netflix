@@ -1,0 +1,18 @@
+:root {
+    --vermelho: #e50914;
+    --preto: #141414;
+} /*Na tag acima fiz a declaração de variavel em css*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Conter o tamanho do elemento dentro da caixa*/
+}
+
+body {
+    background: var(--preto);
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+header .container {
+    
+}
