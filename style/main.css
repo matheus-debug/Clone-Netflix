@@ -14,5 +14,24 @@ body {
 }
 
 header .container {
-    
+    margin-left: 5px;
+    display: flex; /*Deixa os elementos alinhados horizontalmente*/
+    align-items: center; /*Alinhamento vertival*/
+    justify-content: space-between; /*Alinhamento horizontal*/
+}
+
+#logo {
+    color: var(--vermelho);
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none; /*Remover listras dos links*/
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: azure;
 }
