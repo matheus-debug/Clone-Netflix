@@ -7,10 +7,11 @@
     padding: 0;
     box-sizing: border-box; /*Conter o tamanho do elemento dentro da caixa*/
 }
-
+/*ELEMENTOS BASE*/
 body {
     background: var(--preto);
     font-family: 'Noto Sans JP', sans-serif;
+    color: white;
 }
 
 header .container {
@@ -21,9 +22,7 @@ header .container {
 }
 
 #logo {
-    color: var(--vermelho);
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 40px;
+    margin: 15px;
 }
 
 header nav a {
@@ -34,4 +33,24 @@ header nav a {
 
 header nav a:hover{
     color: azure;
+}
+
+/*FILME PRINCIAL*/
+.filme-principal {
+    font-size: 20px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa.jpg'); /*Nessa linha utilizo um linear gradiente (opacidade) apenas na imagem de fundo */
+    height: 600px;
+    background-size: cover;    
+    display: flex; /*COLOCANDO ELEMENTOS ALINHADOS NA MESMA LINHA*/
+    flex-direction: column; /*COLOCANDO ELEMENTOS ALINHADOS NA MESMA COLUNA*/
+    justify-content: center;
+    align-items: flex-start; /*INICIA OS ELEMENTO DA ESQUERDA PARA DIREITA*/
+}
+
+.filme-principal .descricao {
+    margin-bottom: 40px;
+}
+
+.titulo {
+    font-size: 60px;
 }
