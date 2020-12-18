@@ -1,56 +1,87 @@
 :root {
-    --vermelho: #e50914;
-    --preto: #141414;
+  --vermelho: #e50914;
+  --preto: #141414;
 } /*Na tag acima fiz a declaração de variavel em css*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /*Conter o tamanho do elemento dentro da caixa*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*Conter o tamanho do elemento dentro da caixa*/
 }
 /*ELEMENTOS BASE*/
 body {
-    background: var(--preto);
-    font-family: 'Noto Sans JP', sans-serif;
-    color: white;
+  background: var(--preto);
+  font-family: "Noto Sans JP", sans-serif;
+  color: white;
 }
 
 header .container {
-    margin-left: 5px;
-    display: flex; /*Deixa os elementos alinhados horizontalmente*/
-    align-items: center; /*Alinhamento vertival*/
-    justify-content: space-between; /*Alinhamento horizontal*/
+  display: flex; /*Deixa os elementos alinhados horizontalmente*/
+  align-items: center; /*Alinhamento vertival*/
+  justify-content: space-between; /*Alinhamento horizontal*/
 }
 
-#logo {
-    margin: 15px;
+.logo {
+    color: var(--vermelho);
+    font-size: 50px;
 }
-
 header nav a {
-    text-decoration: none; /*Remover listras dos links*/
-    color: #aaa;
-    margin-right: 10px;
+  text-decoration: none; /*Remover listras dos links*/
+  color: #aaa;
+  margin-right: 10px;
 }
 
-header nav a:hover{
-    color: azure;
+header nav a:hover {
+  color: azure;
 }
 
 /*FILME PRINCIAL*/
 .filme-principal {
-    font-size: 20px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa.jpg'); /*Nessa linha utilizo um linear gradiente (opacidade) apenas na imagem de fundo */
-    height: 600px;
-    background-size: cover;    
-    display: flex; /*COLOCANDO ELEMENTOS ALINHADOS NA MESMA LINHA*/
-    flex-direction: column; /*COLOCANDO ELEMENTOS ALINHADOS NA MESMA COLUNA*/
-    justify-content: center;
-    align-items: flex-start; /*INICIA OS ELEMENTO DA ESQUERDA PARA DIREITA*/
+  font-size: 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url("/img/capa.jpg"); /*Nessa linha utilizo um linear gradiente (opacidade) apenas na imagem de fundo */
+  height: 500px;
+  background-size: cover;
+  display: flex; /*COLOCANDO ELEMENTOS ALINHADOS NA MESMA LINHA*/
+  flex-direction: column; /*COLOCANDO ELEMENTOS ALINHADOS NA MESMA COLUNA*/
+  justify-content: center;
+  align-items: flex-start; /*INICIA OS ELEMENTO DA ESQUERDA PARA DIREITA*/
 }
 
 .filme-principal .descricao {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
+  margin-top: 10px;
 }
 
 .titulo {
-    font-size: 60px;
+  font-size: 60px;
+  margin-top: 7%;
+}
+
+.botao {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 15px;
+  margin-right: 15px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.botao:hover {
+  background-color: white;
+  color: black;
+  transition: 1s;
+}
+
+.fas {
+  margin-right: 10px;
+}
+
+.container {
+    margin-left: 30px;
+}
+
+.filme-principal .container {
+    width: 60%;
 }
