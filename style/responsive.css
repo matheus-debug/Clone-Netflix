@@ -1,0 +1,33 @@
+@media (max-width: 700px) {
+    .filme-principal {  
+        background-size: 100% no-repeat;
+        height: 100%;
+    }
+    header .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .titulo {
+        font-size: 20px;
+        margin-top: 7%;
+    }
+    .botoes {
+        display: flex;
+        margin-bottom: 15px;
+    }
+    .descricao {
+        font-size: 15px;
+    }
+  
+}
+
+@media (max-width:1024px){
+    .filme-principal {  
+        background-size: 100% no-repeat;
+        height: 100%;
+    }
+    .botoes {
+        display: flex;
+        margin-bottom: 15px;
+    }
+}

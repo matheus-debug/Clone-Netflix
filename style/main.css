@@ -18,6 +18,7 @@ header .container {
   display: flex; /*Deixa os elementos alinhados horizontalmente*/
   align-items: center; /*Alinhamento vertival*/
   justify-content: space-between; /*Alinhamento horizontal*/
+  margin-right: 5%;
 }
 
 .logo {
@@ -38,9 +39,9 @@ header nav a:hover {
 .filme-principal {
   font-size: 20px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
-    url("/img/capa.jpg"); /*Nessa linha utilizo um linear gradiente (opacidade) apenas na imagem de fundo */
-  height: 500px;
-  background-size: cover;
+    url("/img/capa.jpg") no-repeat; /*Nessa linha utilizo um linear gradiente (opacidade) apenas na imagem de fundo */
+  height: 600px;
+  background-size: 100%;
   display: flex; /*COLOCANDO ELEMENTOS ALINHADOS NA MESMA LINHA*/
   flex-direction: column; /*COLOCANDO ELEMENTOS ALINHADOS NA MESMA COLUNA*/
   justify-content: center;
@@ -84,4 +85,10 @@ header nav a:hover {
 
 .filme-principal .container {
     width: 60%;
+}
+
+.box-filmes {
+  height: 100%;
+  width: 100%;
+  display: block;
 }
